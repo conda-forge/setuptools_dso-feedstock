@@ -1,5 +1,5 @@
 {% set name = "setuptools_dso" %}
-{% set version = "1.5" %}
+{% set version = "1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70c90e207fabbbd0a72a83c0875166b8f03d16917a734875a13144ea20a0df4a
+  sha256: 6f07299ee7b68579fa6822e2c590b5a8afd264a220790baeb921d5388788cd8e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -25,13 +25,13 @@ requirements:
 
 test:
   imports:
-    - setuptools_dso 
+    - setuptools_dso
 
 about:
   home: https://github.com/mdavidsaver/setuptools_dso
   license: BSD
   license_file: LICENSE
-  summary: 'setuptools extension for building non-Python Dynamic Shared Objects'
+  summary: setuptools extension for building non-Python Dynamic Shared Objects
   description: |
     setuptools extension for building non-python shared libraries
     and packaging them for distribution.  eg. for use by python extensions.      
