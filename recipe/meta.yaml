@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python
+    - python >=3.6
     - setuptools
 
 test:
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/mdavidsaver/setuptools_dso
-  license: BSD
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: setuptools extension for building non-Python Dynamic Shared Objects
   description: |
