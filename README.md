@@ -3,7 +3,7 @@ About setuptools_dso
 
 Home: https://github.com/mdavidsaver/setuptools_dso
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setuptools_dso-feedstock/blob/master/LICENSE.txt)
 
