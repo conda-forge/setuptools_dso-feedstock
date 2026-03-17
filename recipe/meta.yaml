@@ -1,5 +1,5 @@
 {% set name = "setuptools_dso" %}
-{% set version = "2.12.2" %}
+{% set version = "2.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7afb76f93d13ce9da24502676d8f2d4dbc3da35c6245f95f27df9fa7445079a4
+  sha256: 9effb7bc38f87ff9aed33cc69e860320804ca6c69af8896dbba10996a49b5d7e
 
 build:
   noarch: python
